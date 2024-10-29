@@ -13,22 +13,22 @@ void test_tolower(int c) {
 
 int main() {
     // Test cases for ft_toupper
-    test_toupper('a'); // Expected: 'A'
-    test_toupper('z'); // Expected: 'Z'
-    test_toupper('A'); // Expected: 'A' (already uppercase)
-    test_toupper('Z'); // Expected: 'Z' (already uppercase)
-    test_toupper('1'); // Expected: '1' (non-alphabetic)
-    test_toupper('!'); // Expected: '!' (non-alphabetic)
-    test_toupper(' '); // Expected: ' ' (space)
+    test_toupper('a');
+    test_toupper('z'); 
+    test_toupper('A'); 
+    test_toupper('Z'); 
+    test_toupper('1');
+    test_toupper('!'); 
+    test_toupper(' '); 
 
     // Test cases for ft_tolower
-    test_tolower('A'); // Expected: 'a'
-    test_tolower('Z'); // Expected: 'z'
-    test_tolower('a'); // Expected: 'a' (already lowercase)
-    test_tolower('z'); // Expected: 'z' (already lowercase)
-    test_tolower('1'); // Expected: '1' (non-alphabetic)
-    test_tolower('!'); // Expected: '!' (non-alphabetic)
-    test_tolower(' '); // Expected: ' ' (space)
+    test_tolower('A');
+    test_tolower('Z'); 
+    test_tolower('a'); 
+    test_tolower('z');
+    test_tolower('1'); 
+    test_tolower('!');
+    test_tolower(' '); 
 
     return 0;
 }

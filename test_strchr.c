@@ -16,14 +16,14 @@ void test_ft_strchr(const char *str, int ch) {
 
 int main() {
     // Tests for ft_strchr
-    test_ft_strchr("Hello, world!", 'w');        // Normal case: character found
-    test_ft_strchr("Hello, world!", 'z');        // Character not found
-    test_ft_strchr("Hello, world!", '\0');       // Searching for null terminator
-    test_ft_strchr("Another example", 'e');      // Character appears multiple times
-    test_ft_strchr("SingleChar", 'S');           // First character in the string
-    test_ft_strchr("EndsWithE", 'E');            // Last character in the string
-    test_ft_strchr("", 'a');                     // Empty string case
-    test_ft_strchr("12345", '5');                // Character found at the end
+    test_ft_strchr("Hello, world!", 'w');       
+    test_ft_strchr("Hello, world!", 'z');        
+    test_ft_strchr("Hello, world!", '\0');      
+    test_ft_strchr("Another example", 'e');      
+    test_ft_strchr("SingleChar", 'S');        
+    test_ft_strchr("EndsWithE", 'E');           
+    test_ft_strchr("", 'a');                     
+    test_ft_strchr("12345", '5');               
 
     return 0;
 }

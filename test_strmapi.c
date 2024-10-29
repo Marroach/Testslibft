@@ -4,7 +4,7 @@
 #include <ctype.h>  // For using isupper and islower functions
 
 // Example transformation function: converts lowercase letters to uppercase
-char to_uppercase(unsigned int index, char c) {
+char ft_to_uppercase(unsigned int index, char c) {
     return (c >= 'a' && c <= 'z') ? c - 32 : c; // Convert to uppercase
 }
 
@@ -21,7 +21,7 @@ int main() {
     char *result;
 
     // Test case 1: Basic usage with to_uppercase
-    result = ft_strmapi("hello", to_uppercase);
+    result = ft_strmapi("hello", ft_to_uppercase);
     printf("Test 1: %s -> %s\n", "hello", result); // Expected: "HELLO"
     free(result); // Free the allocated memory
 
@@ -31,7 +31,7 @@ int main() {
     free(result); // Free the allocated memory
 
     // Test case 3: NULL string input
-    result = ft_strmapi(NULL, to_uppercase);
+    result = ft_strmapi(NULL, ft_to_uppercase);
     printf("Test 3: %s -> %s\n", "NULL", result); // Expected: ""
     free(result); // Free the allocated memory
 
@@ -41,7 +41,7 @@ int main() {
     free(result); // Free the allocated memory
 
     // Test case 5: Empty string input
-    result = ft_strmapi("", to_uppercase);
+    result = ft_strmapi("", ft_to_uppercase);
     printf("Test 5: %s -> %s\n", "", result); // Expected: ""
     free(result); // Free the allocated memory
 

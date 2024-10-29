@@ -29,22 +29,22 @@ void print_result(const char *test_str, int ch, size_t len) {
 int main() {
     // Test cases
     const char *test1 = "Hello, World!";
-    print_result(test1, 'W', strlen(test1)); // Searching for 'W'
+    print_result(test1, 'W', ft_strlen(test1)); // Searching for 'W'
     
     const char *test2 = "Another test string";
-    print_result(test2, 'a', strlen(test2)); // Searching for 'a'
+    print_result(test2, 'a', ft_strlen(test2)); // Searching for 'a'
 
     const char *test3 = "This is a test";
-    print_result(test3, 'z', strlen(test3)); // Searching for a character not present
+    print_result(test3, 'z', ft_strlen(test3)); // Searching for a character not present
     
     const char *test4 = "Last one!";
-    print_result(test4, '!', strlen(test4)); // Searching for '!'
+    print_result(test4, '!', ft_strlen(test4)); // Searching for '!'
 
     const char *test5 = "Check first character";
-    print_result(test5, 'C', strlen(test5)); // Searching for 'C'
+    print_result(test5, 'C', ft_strlen(test5)); // Searching for 'C'
 
     const char *test6 = "Check last character";
-    print_result(test6, 'r', strlen(test6)); // Searching for 'r'
+    print_result(test6, 'r', ft_strlen(test6)); // Searching for 'r'
 
     return 0;
 }

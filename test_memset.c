@@ -9,7 +9,7 @@ int main()
 
 ft_bzero(buff1, 10);
 ft_bzero(buff2, 10);
-	 // Initialize the entire buffers with bzero to avoid junk values
+	 // Initialize the entire buffers with bzero to avoid junk values??
 memset(buff1, 'x', sizeof(char) * 5);
 ft_memset(buff2, 'x', sizeof(char) * 5);
 

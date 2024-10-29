@@ -4,7 +4,7 @@
 void check_type(int value) {
 
     typeof(value) test_var; 
-    printf("The type of the variable is: %s\n", (sizeof(test_var) == sizeof(int) ? "int" : "unknown"));
+    printf("The type is: %s\n", (sizeof(test_var) == sizeof(int) ? "int" : "char"));
 }
 
 int main() {
